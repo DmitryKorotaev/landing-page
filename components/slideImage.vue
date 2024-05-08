@@ -1,0 +1,11 @@
+<template>
+  <b-container>
+    <b-row>
+      <b-col>
+        <b-card>
+          <b-card-image></b-card-image>
+        </b-card>
+      </b-col>
+    </b-row>
+  </b-container>
+</template>
