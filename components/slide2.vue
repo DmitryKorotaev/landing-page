@@ -92,10 +92,6 @@ img {
 }
 .darkening {
   padding: 1.3rem;
-  /* overflow: hidden; Обрезать содержимое, которое выходит за пределы */
-  /* height: 50%;  Задать высоту карточки на 50% экрана */
-  /* display: flex; */
-  /* flex-direction: column; */
   background-color: rgb(244, 246, 246);
 }
 .thinCard {

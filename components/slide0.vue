@@ -97,13 +97,6 @@ export default {
   color: white;
 }
 
-/* .adaptive-button:focus,
-.adaptive-button:active,
-.adaptive-button:hover,
-.adaptive-button:visited {
-  outline: none !important;
-} */
-
 @media (max-width: 768px) {
   .button-container {
     flex-direction: column;
