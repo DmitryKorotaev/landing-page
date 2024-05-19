@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <b-container fluid>
     <div class="bold">Почему выбирают именно нас</div>
     <div class="thin">
       Причины, по которым нашу компанию выбирают многочисленные клиенты
     </div>
     <b-row>
-      <b-col md="4">
+      <!-- <b-col md="4">
         <b-card class="transparent-card">
           <div class="svg-container">
             <b-card-img
@@ -34,43 +34,58 @@
             рабочем состоянии на протяжении длительного времени
           </b-card-text>
         </b-card>
-      </b-col>
-      <b-col md="4">
+      </b-col> -->
+      <b-col md="4" v-for="(item, index) in data1" :key="index">
         <b-card class="transparent-card">
           <div class="svg-container">
-            <b-card-img src="/img/Запчасти.svg" class="svg-img"> </b-card-img>
+            <b-card-img :src="item.image" class="svg-img"> </b-card-img>
           </div>
 
           <b-card-title class="boldCard">
-            Запчасти и моторное масло
+            {{ item.title }}
           </b-card-title>
 
           <b-card-text class="thinCard">
-            Мы предоставляем клиентам возможность приобрести запчасти и моторное
-            маслом по самым доступным ценам
+            {{ item.description }}
           </b-card-text>
         </b-card>
       </b-col>
     </b-row>
-  </div>
+  </b-container>
 </template>
 
 <script>
-export default {};
+import { data1 } from "../assets/data.js";
+export default {
+  data() {
+    return {
+      data1: data1,
+    };
+  },
+};
 </script>
 
 <style scoped>
-.transparent-card {
-  background-color: transparent;
-  border: none;
+.container-fluid {
+  padding: 2.5rem;
 }
 .svg-container {
   display: flex;
   justify-content: center;
 }
+.svg-img {
+  width: 100%;
+  height: auto;
+}
+.card-title {
+  margin-top: 1rem;
+}
+.thinCard {
+  padding: 0rem;
+}
 @media screen and (min-width: 1100px) {
   .svg-img {
-    width: 16rem;
+    width: 18rem;
     height: auto; /* Чтобы сохранить пропорции */
   }
 }
@@ -80,15 +95,4 @@ export default {};
     height: auto; /* Чтобы сохранить пропорции */
   }
 }
-/* .b-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-/* .card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 </style>

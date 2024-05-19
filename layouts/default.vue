@@ -1,21 +1,28 @@
 <template>
   <div class="gray">
     <header>
-      <Info />
+      <InfoHeader />
     </header>
     <main>
       <Nuxt />
     </main>
-    <footer></footer>
+    <footer>
+      <yandexMap />
+      <infoFooter />
+    </footer>
   </div>
 </template>
 
 <script>
-import Info from "../components/info.vue";
+import InfoHeader from "../components/infoHeader.vue";
+import yandexMap from "../components/yandexMap.vue";
+import infoFooter from "../components/infoFooter.vue";
 
 export default {
   components: {
-    Info,
+    InfoHeader,
+    yandexMap,
+    infoFooter,
   },
 };
 </script>

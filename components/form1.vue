@@ -70,14 +70,13 @@ export default {
 </script>
 
 <style scoped>
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .indent {
   padding: 4rem;
 }
-.card {
-  border: 0px;
-  border-radius: 0rem;
-}
-
 .inline-form {
   display: flex;
   align-items: center;

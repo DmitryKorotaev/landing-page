@@ -1,3 +1,6 @@
+:root {
+  --text-color: white; /* значение по умолчанию для цвета текста */
+}
 .bold,
 .thin,
 .boldCard,
@@ -10,67 +13,53 @@
 .thin.dark-bg,
 .boldCard.dark-bg,
 .thinCard.dark-bg {
-  --text-color: black; /* изменение значения переменной при наличии класса dark-bg */
+  --text-color: rgb(
+    63,
+    63,
+    63
+  ); /* изменение значения переменной при наличии класса dark-bg */
+}
+.card {
+  border: 0px;
+  border-radius: 0rem;
+}
+.transparent-card {
+  background-color: transparent;
+  border: none;
 }
 
 .bold {
   font-weight: 400;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   color: var(--text-color);
-  padding: 1rem;
+  padding: 2rem 0rem 0.5rem;
 }
-/* .bold.dark-bg {
-  --text-color: black;
-} */
+
 .thin {
-  /* font-family: "Roboto", sans-serif; */
-  font-weight: 200;
-  font-size: 1.2rem;
+  font-weight: 100;
+  font-size: 1.3rem;
   color: var(--text-color);
-  padding: 1rem;
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
+  padding: 0rem 0rem 1rem;
 }
-/* .thin.dark-bg {
-  --text-color: black;
-} */
-:root {
-  --text-color: white; /* значение по умолчанию для цвета текста */
-}
+
 .boldCard {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 1.4rem;
   color: var(--text-color); /* использование CSS переменной */
-  /* padding: 1rem; */
-  /* text-align: center; */
 }
-/* .boldCard.dark-bg {
-  --text-color: black;
-} */
+
 .thinCard {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 200;
   font-size: 1rem;
   color: var(--text-color);
   padding: 1rem;
-  /* text-align: center; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* margin-top: auto; */
 }
-/* .thinCard.dark-bg {
-  --text-color: black;
-} */
+
 .boldCardForm {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 100;
   font-size: 1.4rem;
   color: black;
   padding: 1rem;
-  /* text-align: center; */
 }
 
 .red {

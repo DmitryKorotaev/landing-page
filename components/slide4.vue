@@ -4,12 +4,12 @@
       <b-col>
         <b-card>
           <b-card-title class="bold dark-bg">
-            Пройдите диагностику
+            Гарантия на ремонт автомобиля
           </b-card-title>
           <b-card-text class="thin dark-bg">
-            Результаты диагностики отображаются для владельца автомобиля,
-            например в виде сигнала о неисправности на приборной панели, а также
-            используются автомеханиками и диагностами
+            Качественные комплектующие, современное оборудование и опытные
+            специалисты, - всё это позволяет нам быть уверенными в своих силах.
+            Мы предоставляем гарантию на 10 лет
           </b-card-text>
           <b-button @click="showModal" class="red btn-lg btn-block">
             Записаться
@@ -22,7 +22,7 @@
       </b-col>
       <b-col>
         <b-card class="no-padding p-0"
-          ><b-card-img src="/img/эстакада.jpg"></b-card-img>
+          ><b-card-img src="/img/slide4.jpg"></b-card-img>
         </b-card>
       </b-col>
     </b-row>
@@ -50,9 +50,7 @@ export default {
 .container-fluid {
   padding: 4rem 0rem;
 }
-.bold.dark-bg {
-  color: rgb(62, 62, 62);
-}
+
 .card {
   margin: 3rem;
   /* margin-left: 2rem;

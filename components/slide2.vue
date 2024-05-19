@@ -1,7 +1,7 @@
 <template>
   <b-container fluid>
-    <b-row class="">
-      <b-col md="6" class="mt-5 mb-5">
+    <b-row>
+      <b-col sm="12" md="6" lg="5">
         <b-card class="transparent-card">
           <div class="darkening">
             <b-card-title class="boldCard dark-bg">
@@ -22,7 +22,7 @@
           </div>
         </b-card>
       </b-col>
-      <b-col md="6" class="mt-5 mb-5">
+      <b-col sm="12" md="6" lg="7">
         <b-card class="transparent-card">
           <div class="img-container">
             <div class="img1 img-rel">
@@ -47,7 +47,14 @@ export default {};
 
 <style scoped>
 .container-fluid {
+  padding: 2.8rem;
   background-color: white;
+}
+.col-sm-12,
+.col-md-6,
+.col-lg-7 {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .transparent-card {
   border: none;
@@ -65,14 +72,17 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .img1 {
   width: 58%;
 }
 .img2 {
-  width: 40%;
+  width: 39%;
   align-self: center;
+  margin-top: -8%;
+  right: -2%;
 }
 .img3 {
   width: 58%;
@@ -81,40 +91,19 @@ img {
   z-index: 10;
 }
 .darkening {
-  overflow: hidden; /* Обрезать содержимое, которое выходит за пределы */
-  height: 50%; /* Задать высоту карточки на 50% экрана */
-  display: flex;
-  flex-direction: column;
+  padding: 1.3rem;
+  /* overflow: hidden; Обрезать содержимое, которое выходит за пределы */
+  /* height: 50%;  Задать высоту карточки на 50% экрана */
+  /* display: flex; */
+  /* flex-direction: column; */
   background-color: rgb(244, 246, 246);
 }
 .thinCard {
   text-align: start;
 }
-@media screen and (min-width: 900px) {
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0rem;
+  }
 }
-/* .svg-img {
-  height: auto;
-  position: absolute;
-}
-.svg-img:nth-child(1) {
-  z-index: 1;
-  width: 20rem;
-  top: 3rem;
-  left: 1rem;
-  transform: translate(-50%, -50%);
-}
-
-.svg-img:nth-child(2) {
-  z-index: 2;
-  width: 15rem;
-  top: 30rem;
-  left: 14rem;
-}
-
-.svg-img:nth-child(3) {
-  z-index: 0;
-  width: 20rem;
-  top: 12rem;
-  left: 17rem;
-} */
 </style>
