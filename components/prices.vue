@@ -27,7 +27,7 @@
         </b-card>
       </b-col>
     </b-row>
-    <modalForm
+    <ModalForm
       :modalVisible="modalVisible"
       @closeModal="modalVisible = false"
       :selectedItem="selectedItem"
@@ -37,7 +37,7 @@
 
 <script>
 import { data } from "~/assets/data.js";
-import modalForm from "./modalForm.vue";
+
 export default {
   data() {
     return {
@@ -46,9 +46,7 @@ export default {
       modalVisible: false,
     };
   },
-  components: {
-    modalForm,
-  },
+
   methods: {
     showModal(index) {
       // Записываем выбранную карточку в переменную selectedItem

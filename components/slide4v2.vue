@@ -27,7 +27,7 @@
               Записаться
             </b-button>
           </div>
-          <modalForm
+          <ModalForm
             :modalVisible="modalVisible"
             @closeModal="modalVisible = false"
           />
@@ -38,11 +38,7 @@
 </template>
 
 <script>
-import modalForm from "./modalForm.vue";
 export default {
-  components: {
-    modalForm,
-  },
   data() {
     return {
       modalVisible: false,

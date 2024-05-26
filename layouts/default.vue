@@ -7,24 +7,14 @@
       <Nuxt />
     </main>
     <footer>
-      <yandexMap />
-      <infoFooter />
+      <YandexMap />
+      <InfoFooter />
     </footer>
   </div>
 </template>
 
 <script>
-import InfoHeader from "../components/infoHeader.vue";
-import yandexMap from "../components/yandexMap.vue";
-import infoFooter from "../components/infoFooter.vue";
-
-export default {
-  components: {
-    InfoHeader,
-    yandexMap,
-    infoFooter,
-  },
-};
+export default {};
 </script>
 
 <style>
